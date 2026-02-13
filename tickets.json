@@ -1,0 +1,51 @@
+{
+  "sampleTickets": [
+    {
+      "title": "Cannot login to my account",
+      "description": "I've been trying to log into my account for the past hour but keep getting an 'invalid credentials' error. I'm sure I'm using the correct email and password. Please help!",
+      "category": "tech",
+      "expectedClassification": {
+        "category": "tech",
+        "confidence": 0.85
+      }
+    },
+    {
+      "title": "Refund request for order #12345",
+      "description": "I would like to request a full refund for my recent order #12345. The item arrived damaged and doesn't match the description. I'm within the 30-day return window.",
+      "category": "billing",
+      "expectedClassification": {
+        "category": "billing",
+        "confidence": 0.90
+      }
+    },
+    {
+      "title": "My package is lost",
+      "description": "I ordered a laptop two weeks ago and the tracking shows it was delivered, but I never received it. The tracking number is ABC123456. Please investigate what happened to my shipment.",
+      "category": "shipping",
+      "expectedClassification": {
+        "category": "shipping",
+        "confidence": 0.92
+      }
+    },
+    {
+      "title": "General inquiry about services",
+      "description": "Hi, I'm interested in learning more about your premium service offerings. Can someone provide me with more details about what's included?",
+      "category": "other",
+      "expectedClassification": {
+        "category": "other",
+        "confidence": 0.75
+      }
+    }
+  ],
+  "stubResponses": {
+    "billing": {
+      "draftReply": "Thank you for contacting us regarding your billing inquiry. I'm here to help you resolve this matter.\n\nBased on our knowledge base, here are some relevant resources:\n\n1. How to update payment method\n   To update your payment method, go to Account Settings > Billing > Payment Methods...\n\n2. Refund policy and process\n   We offer full refunds within 30 days of purchase. To request a refund, go to Order History...\n\nPlease review these resources. If they don't resolve your issue, I'll escalate this to a human agent for further assistance.\n\nBest regards,\nSupport Team"
+    },
+    "tech": {
+      "draftReply": "Thank you for reporting this technical issue. I'm here to help you resolve this matter.\n\nBased on our knowledge base, here are some relevant resources:\n\n1. Troubleshooting 500 Internal Server Errors\n   A 500 error indicates a server-side problem. First, try refreshing the page...\n\n2. Password reset instructions\n   To reset your password, click 'Forgot Password' on the login page...\n\nPlease review these resources. If they don't resolve your issue, I'll escalate this to a human agent for further assistance.\n\nBest regards,\nSupport Team"
+    },
+    "shipping": {
+      "draftReply": "Thank you for contacting us about your shipment. I'm here to help you resolve this matter.\n\nBased on our knowledge base, here are some relevant resources:\n\n1. How to track your shipment\n   You can track your shipment using the tracking number provided in your shipping confirmation email...\n\n2. Changing your shipping address\n   Update your shipping address before your order ships...\n\nPlease review these resources. If they don't resolve your issue, I'll escalate this to a human agent for further assistance.\n\nBest regards,\nSupport Team"
+    }
+  }
+}
